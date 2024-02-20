@@ -2,10 +2,10 @@
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "basic_node2"); // ROS 노드를 초기화하고 노드 이름을 "basic_node2"로 설정
+  ros::init(argc, argv, "basic_node2"); // ROS 노드를 초기화하고 노드 이름을 "basic_node"로 설정
   ros::NodeHandle n; // ROS 노드 핸들러 생성
 
-  ros::Rate loop_rate(60); // 주기를 60Hz로 설정하는 Rate 객체 생성
+  ros::Rate loop_rate(1); // 주기를 1Hz로 설정하는 Rate 객체 생성 1roop/1sec
 
   while (ros::ok()) // ROS가 정상적으로 실행 중인 동안 반복
   {
