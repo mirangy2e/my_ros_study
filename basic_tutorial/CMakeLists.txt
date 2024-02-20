@@ -1,23 +1,17 @@
-cmake_minimum_required(VERSION 3.0.2)
-project(basic_tutorial)
+<?xml version="1.0"?>
+<package format="2">
+  <name>basic_tutorial</name>
+  <version>0.0.0</version>
+  <description>The basic_tutorial package</description>
+  <maintainer email="miran@todo.todo">miran</maintainer>
 
+  <license>TODO</license>
 
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-)
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
 
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES basic_tutorial
-#  CATKIN_DEPENDS roscpp
-#  DEPENDS system_lib
-)
-
-include_directories(
-# include
-  ${catkin_INCLUDE_DIRS}
-)
-
-add_executable(basic_node src/basic.cpp)
-target_link_libraries(basic_node ${catkin_LIBRARIES})
-
+  <export>
+  </export>
+</package>
